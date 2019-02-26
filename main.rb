@@ -57,8 +57,15 @@ GalagaInvaders.new.show
 Reflecting on Principle
 -----------------------
 1. What is "duck typing" and what does it have to do with polymorphism?
+  + In a way duck typing is trying not to get class tied to any specific class. Making sure everything in the interface is relate and does that spesific thing the programmer is trying todo.
 2. What are some common code smells that indicate the need for relying on a
    "duck type" rather than a concrete class?
+    -Case statments that switch on class
+	  -kinkd_of? and is_a?
+	  -responds_to?
+	  -switch case on the class names of domain objects
 3. True or False: Abstractions like duck typing make code explicitly easier to
    understand, vs. using concrete types.
+  + F
+
 =end

@@ -26,10 +26,18 @@ class Alien
     location.y + half_height
   end
 
+  def muzzle_location
+    Vector.new(location.x, top_edge)
+  end
+
   private
 
   def half_height
     HEIGHT / 2
+  end
+
+  def top_edge
+    location.y - half_height
   end
 
 end
